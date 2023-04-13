@@ -1,6 +1,5 @@
-# Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit
+# Exp-03-Implementation-of-Half-Adder-and-Full-Adder-circuit
 
-# Implementation-of-Half-Adder-and-Full-Adder-circuit
 ### AIM:
 To design a half adder and full adder circuit and verify its truth table in Quartus using Verilog programming.
 
@@ -62,12 +61,6 @@ assign carry = ((a&b)|(b&c)|(c&a));
 endmodule
 ```
 ### Output:
-### Logic symbol & Truthtable
-### HalfAdder
-![image](https://user-images.githubusercontent.com/118679646/231659701-4fec01e4-b192-4ae8-a364-0bf75a228734.png)
-
-### FullAdder
-![image](https://user-images.githubusercontent.com/118679646/231660490-3ee991fc-c0dc-467c-9bae-7f350bb239b5.png)
 
 ### RTL realization
 HalfAdder
@@ -90,7 +83,7 @@ HalfAdder
 
 FullAdder
 
-![image](https://user-images.githubusercontent.com/118679646/231661597-2168af65-b84a-42a9-b052-35018d68b490.png)
+![image](https://user-images.githubusercontent.com/118679646/231663216-940ca46f-fd89-4b12-a428-7e87ebdc0f79.png)
 
 ### Result:
 Thus, a half adder and full adder circuit is designed to verify its truth table in Quartus using Verilog programming.
