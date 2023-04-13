@@ -35,20 +35,62 @@ Connect the supply (+5V) to the circuit
 Switch ON the main switch
 If the output is 1, then the led glows.
 ### 
-Program:
+# Program:
 /*
 Program to design a half adder and full adder circuit and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
+
+Developed by: NATHIN R
+
+RegisterNumber:  212222230090
 */
-Logic symbol & Truthtable
-RTL realization
-
+### HalfAdder
+```
+module Adder(a,b,sum,carry);
+input a,b;
+output sum,carry;
+xor(sum,a,b);
+and(carry,a,b);
+endmodule
+```
+### FullAdder
+```
+module Adder(a,b,c,sum,carry);
+input a,b,c;
+output sum,carry;
+assign sum = ((a^b)^c);
+assign carry = ((a&b)|(b&c)|(c&a));
+endmodule
+```
 ### Output:
-### RTL
-### TIMING DIAGRAM
+### Logic symbol & Truthtable
+### HalfAdder
+![image](https://user-images.githubusercontent.com/118679646/231659701-4fec01e4-b192-4ae8-a364-0bf75a228734.png)
 
+### FullAdder
+![image](https://user-images.githubusercontent.com/118679646/231660490-3ee991fc-c0dc-467c-9bae-7f350bb239b5.png)
+
+### RTL realization
+HalfAdder
+![image](https://user-images.githubusercontent.com/118679646/231659061-372b4928-b03a-4aa0-938e-c049c8cb2fed.png)
+
+FullAdder
+![image](https://user-images.githubusercontent.com/118679646/231660255-c22db4bf-e4b9-4c3a-a901-a8e054faa7ec.png)
+
+### TIMING DIAGRAM
+HalfAdder
+![Screenshot 2023-04-13 103130](https://user-images.githubusercontent.com/118679646/231659406-0e23da10-9826-4a1d-a85c-20deb4f901dd.png)
+
+FullAdder
+![image](https://user-images.githubusercontent.com/118679646/231661157-9328698f-d961-4cda-936d-fb655b87fe91.png)
 
 ### TRUTH TABLE 
+HalfAdder
+
+![image](https://user-images.githubusercontent.com/118679646/231659880-a7ecff4b-f4b9-4d7a-8036-93d069aac7a5.png)
+
+FullAdder
+
+![image](https://user-images.githubusercontent.com/118679646/231661597-2168af65-b84a-42a9-b052-35018d68b490.png)
 
 ### Result:
+Thus, a half adder and full adder circuit is designed to verify its truth table in Quartus using Verilog programming.
